@@ -46,17 +46,17 @@ Node* buildtree(){
   root->right=buildtree();
   return root;
 }
-void print(Node*root){
-  if(root==NULL){
-    return;
-  }
-  cout<<root->data<<" ";
-  print(root->left);
-  print(root->right);
-}
+// void print(Node*root){
+//   if(root==NULL){
+//     return;
+//   }
+//   cout<<root->data<<" ";
+//   print(root->left);
+//   print(root->right);
+// }
 int main(){
  Node *root=buildtree();
- print(root);
+//  print(root);
  cout<<"\n";
  vector<vector<int>> v = levelorder(root);
  for(auto i : v){

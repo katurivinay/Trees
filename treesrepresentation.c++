@@ -1,14 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-struct Node{
+class Node{
 int data;
-Node *left = NULL;
-Node *right = NULL;
-  Node(int val){
+Node *left;
+Node *right ;
+Node(int val){
     data = val;
+  left = NULL;
+  right = NULL;
 }
 };
-
 int main(){
 
 }
